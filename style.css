@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background: #22223b;
+  color: #fff;
+  padding: 32px 0 16px 0;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.search-box {
+  margin: 24px auto 0 auto;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+.search-box input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.search-box input:focus {
+  border: 1.5px solid #4ea8de;
+}
+.sites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 32px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.site-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(34,34,59,0.07);
+  padding: 24px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.site-card:hover {
+  box-shadow: 0 6px 24px rgba(34,34,59,0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #22223b;
+  margin-bottom: 8px;
+}
+.site-desc {
+  font-size: 0.98rem;
+  color: #4a4e69;
+  margin-bottom: 16px;
+  min-height: 48px;
+}
+.site-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: #4ea8de;
+  font-weight: 500;
+  border: 1px solid #4ea8de;
+  border-radius: 6px;
+  padding: 6px 16px;
+  transition: background 0.2s, color 0.2s;
+}
+.site-link:hover {
+  background: #4ea8de;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  .sites-container {
+    padding: 16px 4px;
+    gap: 14px;
+  }
+  .site-card {
+    padding: 14px 8px 12px 8px;
+  }
+} 
